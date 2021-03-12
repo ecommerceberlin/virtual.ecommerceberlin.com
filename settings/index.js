@@ -1,190 +1,5 @@
-
-//
-
-
 const settings = {
     
-    globals : {
-        filterPresenterWithBio : {
-            type : "condition", 
-            required : ["avatar", "logotype", "bio"]
-        },
-        featuredPresenters : {
-            type : "condition",
-            required : ["avatar", "logotype", "bio", "featured"]
-        },
-        anotherTestGlobal : {type : "widget"},
-        vipVisitor : {
-            type : "props",
-            data : {
-
-            }
-        }
-    },
-
-    pages : {
-
-        speaking : {
-
-            title : "",
-            opengraph : "",
-            widgets : [
-
-            ]
-        },
-
-        vip : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                {name : "WidgetVisitor", props : {
-                    data : { important: 1 },
-                    template : "ecommerceberlin-vip-registration",
-                    label : "vips.register.title",
-                    fields : [
-                        {name: "referral", required: true},
-                        {name: "email", required: true},
-                        {name: "fname", required: true},
-                        {name: "lname", required: true},
-                        {name: "cname2", required: true},
-                        {name: "position", required: true},
-                        {name: "phone", required: true}
-                      ],
-                    start : ['referral', 'email', 'fname'],
-                    first : true
-                }},
-                {name : "WidgetIconGrid", props : {
-                    setting : "vips.benefits" 
-                }},
-                {name : "WidgetVips", props : {
-                    limit: 12,
-                    mobile: 4
-                }},
-                // {name : "WidgetSchedule", props : { } },
-                {name : "WidgetVideoWithEventInfo"},
-                {name : "WidgetVisitor", props : {
-                    data : { important: 1 },
-                    template : "ecommerceberlin-vip-registration",
-                    label : "vips.register.title",
-                    fields : [
-                        {name: "referral", required: true},
-                        {name: "email", required: true},
-                        {name: "fname", required: true},
-                        {name: "lname", required: true},
-                        {name: "cname2", required: true},
-                        {name: "position", required: true},
-                        {name: "phone", required: true}
-                      ],
-                    start : ['referral','email', 'cname2'],
-                    // first : true
-                }},
-             
-                // {name : "WidgetPresenters", props : {
-                //     disableTemps : true,
-                //     label : "presenters.list_featured",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@featuredPresenters"
-                // }},
-                // {name : "WidgetVisitor", props : {
-                //     data : { important: 1 },
-                //     template : "ecommerceberlin-vip-registration",
-                //     label : "vips.register.title",
-                //     fields : [
-                //         {name: "referral", required: true},
-                //         {name: "email", required: true},
-                //         {name: "fname", required: true},
-                //         {name: "lname", required: true},
-                //         {name: "cname2", required: true},
-                //         {name: "position", required: true},
-                //         {name: "phone", required: true}
-                //       ],
-                //     start : ['referral', 'email', 'cname2'],
-                //     // first : true
-                // }},
-            
-            ],
-        },
-
-       
-        presenters : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                {name : "WidgetPresenters", props : {
-                    first : true,
-                    disableTemps : false,
-                    label : "presenters.list_all",
-                    limit : null,
-                    bio : true,
-                    filter : "@filterPresentersBasic"
-                }},
-                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
-                {name : "WidgetVideoWithEventInfo"},
-                // {name : "WidgetSchedule", props : { } },
-                // {name : "WidgetVisitor", props : {label : "visitors.register"} },
-            ]
-        },
-
-        presenters_all : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                // {name : "WidgetPresenters", props : {
-                //     first : true,
-                //     disableTemps : true,
-                //     label : "presenters.list_all",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@filterPresenterWithBio"
-                // }},
-                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
-                {name : "WidgetVideoWithEventInfo"},
-                // {name : "WidgetSchedule", props : { } },
-                // {name : "WidgetVisitor", props : {label : "visitors.register"} },
-            ]
-        },
-
-        schedule : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                // {name : "WidgetSchedule", props : {first : true} },
-                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
-                {name : "WidgetVideoWithEventInfo"},
-                // {name : "WidgetPresenters", props : {
-                //     disableTemps : true,
-                //     label : "presenters.list_all",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@filterPresenterWithBio"
-                // }}
-            ]   
-        }
-
-    },
-
-    banner_cfp: {
-        /**
-         * 
-            xs, extra-small: 0px
-            sm, small: 600px
-            md, medium: 960px
-            lg, large: 1280px
-            xl, extra-large: 1920px
-         */
-        //wrapperProps: {},
-        sizes: {
-            xl: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            lg: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            md: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            sm: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            xs: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf"
-        },
-        href: "https://ecommercegermanyawards.com"
-    },
-
-
     system : {
         passwords : {
             'admin': '1751bfe48d5ad21fd9d'
@@ -192,45 +7,21 @@ const settings = {
         lang_api_endpoint : 'https://api.eventjuicer.workers.dev/?url=https%3A%2F%2Flocalise.biz%2Fapi%2Fexport%2Fall.json%3Fformat%3Dmulti%26key%3Dx6_4tYYfoH19FsSulzP3Oi-SeuTx4N9K',
         api : "https://api.eventjuicer.com/v1/public/hosts/virtual.ecommerceberlin.com",
         post_api : "https://api.eventjuicer.com/v1/public/hosts/virtual.ecommerceberlin.com/register",
-        og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
+        og_image : "https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615550856/virtualebe_reg.jpg",
     
     },
     hero : {
-
-        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1544572510/ebe_hero_final.mp4",
-        background : "https://res.cloudinary.com/eventjuicer/image/upload/v1544572575/ebe_hero_final_poster.jpg",
+        showable: ["date"],
+        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1615545797/virtualebe.mp4",
+        background : "https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615545795/virtualebe.jpg",
         overlay : "black",
         template : "heroGold",
-        heading : "event.claim",
-        subheading : "event.description"
+        heading : "virtual.event.claim",
+        subheading : "virtual.event.description",
     },
 
-    bookingmap : {
-        height : 2600,
-        steps : [
-            "choose_booth",
-            "confirm",
-            "pay",
-            "access"
-        ],
-        allowedGroupIds : [322, 323, 324, 325, 329],
-        disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
-        boothStyleMapping: {
-            322: "light", //STD
-            323: "standard", //HOT
-            324: "hot", //SHOT
-            329: "superHot", //GRAND
-            325: "ultra", //PREMIUM GRAND
-
-            328: "stage",
-            326: "networking",
-            // 321: "boothSold"
-        },
-        api : "https://order.ecommerceberlin.com/preorder"
-    },
 
     speakers : {
-
 
         callforpapers: {
             
@@ -295,41 +86,6 @@ const settings = {
       
     },
 
-    vips : {
-
-        benefits : {
-
-            label: "vips.benefits.title",
-     //       secondaryLabel: "vips.benefits.description",
-            baseLabel: "vips.benefits",
-            typography: "subtitle",
-            dense: true,
-            
-            items: [
-
-                {   
-                    icon : "FaFastForward",
-                    label : 'fastentry'
-                },
-            
-                {   
-                    icon : "FaChair",
-                    label : 'seats'
-                },
-            
-                {   
-                    icon : "FaHandshake",
-                    label : 'vipzone'
-                }
-            ]
-        },
-
-    },
-
-    reviews : {
-
-    },
-
     ui : {
 
         menuItems : [
@@ -337,95 +93,50 @@ const settings = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
-                {name: 'about', to: '/about'},
-                // {name: 'cfp', to: '/speaking'},
-                // {name: 'vote', to: '/vote'},
+               
               ]
             },
-            {
-              name: 'visitors',
-              items: [
-                {name: 'visit', to: '/visit'},
-                // {name: 'schedule', to: '/schedule'},
-                {name: 'presenters', to: '/presenters'},
-                // {name: 'exhibitors', to: '/exhibitors'},
-                // {name: 'offers', to: '/offers'}
-              ]
-            },
-            {
-              name: 'exhibitors',
-              items: [
-                {name: 'exhibit', to: '/exhibit'},
-                {name: 'sample-visitors', to: '/sample-visitors'},
-                {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'premium-services', to: '/premium'},
-                {name: 'faq', to: '/faq'},
-              
-              ]
-            }
+            // {
+            // name: 'exhibitors',
+            // items: [
+            //     {name: 'exhibit', to: '/exhibit'}, 
+            // ]
+            // }
         ]
     },
 
-    premium : {
-
-        ticketgroups : [331]
-
+    sponsors : {
+        wrapperProps: {
+            label: "categories.title"
+        },
+        grid: {
+            xl: 3, lg: 3, md: 3, sm: 6, xs: 6 
+        },
+        ticket_group_id: 334,
+        moreInfoLabel: "categories.become_a_sponsor",
     },
 
-    exhibitors : {
-
-
-     
-
-        benefits : {
-
-            label: "exhibitors.benefits.title",
-            //secondaryLabel: "exhibitors.benefits.description",
-            baseLabel: "exhibitors.benefits",
-            typography: "subtitle",
-            dense: true,
-
-            items: [
-
-                {
-                    icon : "FaHandshake",
-                    label :  'outreach',
-                },
-            
-                {
-                    icon : "FaPiggyBank",
-                    label : 'all_inclusive'
-                },
-            
-                {
-                    icon : "FaComments",
-                    label : 'feedback'
-                },
-
-                {
-                    icon : "FaLink",
-                    label : 'meet_clients'
-                },
-
-                {
-                    icon : "FaSmile",
-                    label : 'organizer'
-                },
-
-                {
-                    icon : "FaLightbulb",
-                    label : 'inspiration'
-                },
-
-            ]
+    premium: {
+        ticketgroups: [334],
+        disabledBuying: true,
+        wrapperProps: {
+            label: "categories.sponsorship.title"
         }
     },
-    visitor : {
+   
+    streaming_user : {
 
 
         register: {
 
-            label : "visitors.register",
+            wrapperProps: {
+                label : "virtual.register.title",
+                secondaryLabel: "virtual.register.description"
+            },
+
+            baseLabel: "virtual.register",
+            legend: "virtual.register.legend",
+
             fields : [
               {name: "email", required: true},
               {name: "fname", required: true},
@@ -437,15 +148,16 @@ const settings = {
             ],
 
             start : ['email', 'fname'],
-            ticket_id : 1830,
-            email_template : "ecommerceberlin-visitor-registration",
-            background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
+            ticket_id : 1897,
+            email_template : "virtual-viewer-registration",
+            right : "https://res.cloudinary.com/eventjuicer/image/upload/c_fit,h_700,w_700,f_auto/v1615550856/virtualebe_reg.jpg",
+            rightShadowed: true
 
         },
 
         benefits : {
 
-            label: "visitors.benefits.title",
+            label: "viewer.benefits.title",
             //secondaryLabel: "visitors.benefits.title",
             baseLabel: "visitors.benefits",
             typography: "subtitle",
@@ -486,7 +198,7 @@ const settings = {
             ]
         }, 
 
-        default_ticket_id : 1830,
+        default_ticket_id : 1897,
         default_email_template : "ecommerceberlin-visitor-registration",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
     },
@@ -496,27 +208,27 @@ const settings = {
         organizer_name : 'E-commerce Capitals Sp. z o.o. Sp. k.',
         organizer_address : 'POLAND, Poznan, Jana Matejki 52/4',
         organizer_regno : 'VAT ID 7792439665',
-        event_name : 'E-commerce Berlin Expo',
-        event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '27th May 2021',
-        event_hours : '10:00-17:00',
+        event_name : 'E-commerce Berlin Virtual Edition',
+        event_location : '',
+        event_date : '26-27th May 2021',
+        event_hours : '',
 
     },
 
     rolebuttons : {
         accent : "gold",
         items : [
-        {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg',
-          label: 'common.visitor',
-          width: '50%',
-          target : "/visit"
-        },
+        // {
+        //   url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg',
+        //   label: 'common.visitor',
+        //   width: '50%',
+        //   target : "/visit"
+        // },
         {
           url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/exhibit.jpg',
-          label: 'common.exhibitor',
-          width: '50%',
-          target : "/exhibit"
+          label: 'virtual.looking_for_expo',
+          width: '100%',
+          target : "https://ecommerceberlin.com"
         },
         ]
     },
@@ -577,6 +289,9 @@ const settings = {
     },
 
     footer : {
+        showable: ["date"],
+        primaryStyle: null,
+        secondaryStyle: null,
         iconStyle : "black",
         links : [
             {label: "common.pages.imprint", href : "/legal/imprint"},
@@ -587,12 +302,9 @@ const settings = {
         ]
     },
 
-
-
-
     appbar : {
         links: [
-            {label: "E-commerce Germany Awards", color: "secondary",  href: "https://ecommercegermanyawards.com", variant: "outlined"}
+           // {label: "E-commerce Germany Awards", color: "secondary",  href: "https://ecommercegermanyawards.com", variant: "outlined"}
         ],
     },
 
@@ -625,20 +337,7 @@ const settings = {
         ]
     },
 
-    cfptimeline: {
 
-        baseLabel: "cfp.timeline",
-
-        items : [
-            {date: "2020-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
-            {date: "2020-10-01", name: "public-voting", icon:  "Public" },
-            {date: "2020-10-23", name: "qualification", icon:  "Assessment" },
-            {date: "2020-10-26", name: "jury-voting", icon:  "HowToVote" },
-            {date: "2020-10-30", name: "results", icon:  "Mic", active: false }
-            
-        ]
-
-    }
 };
 
 

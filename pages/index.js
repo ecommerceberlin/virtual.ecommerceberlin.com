@@ -3,18 +3,24 @@ import React from 'react'
 import {
   connect,
   WidgetVideoWithEventInfo,
-  WidgetVisitor,
-  WidgetFeaturedCompanies,
-  WidgetAllExhibitorsColumnList,
-  WidgetRoleButtons,
+  WidgetRegForm,
   WidgetPartners,
   reduxWrapper,
   configure,
-  WidgetBanner,
-  WidgetFeaturedPresenters
+  WidgetTicketOwners,
+  WidgetPresenters,
+  WidgetRoleButtons
 } from 'eventjuicer-site-components';
 
- 
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+import CodeIcon from '@material-ui/icons/Code';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
+import LanguageIcon from '@material-ui/icons/Language';
+import NewReleasesIcon from '@material-ui/icons/NewReleases';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+
 
 const settings = require('../settings').default;
 
@@ -25,46 +31,27 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
-  {/* <WidgetSchedule /> */}
+  {/* <WidgetTicketOwners icons={{
+    TrendingUpIcon, 
+    ImportantDevicesIcon, 
+    CodeIcon, 
+    CloudUploadIcon, 
+    LocalShippingIcon, 
+    LanguageIcon, 
+    NewReleasesIcon, 
+    ShoppingBasketIcon
+  }}/> */}
 
-  <WidgetBanner setting="banner_cfp" />
+  <WidgetRegForm setting="streaming_user.register" />
 
-  {/* <WidgetVisitor
-    label="visitors.register"
-    secondaryLabel="event.parties"
-  /> */}
 
-  <WidgetFeaturedCompanies />
+  <WidgetPresenters wrapperProps={{
+    label: "virtual.presenters.title",
+    secondaryLabel: "virtual.presenters.description"
+  }} limit={8} />
 
-  {/* <WidgetSalesMap
-    label="exhibitors.map.title2"
-    secondaryLabel="exhibitors.map.opensales"
-  /> */}
 
-  <WidgetFeaturedPresenters limit={24}/>
-
-  <WidgetRoleButtons first={false} />
-
-  {/* <FeaturedExhibitors /> */}
-
-  {/* <WidgetVisitor
-    label="visitors.register_alt"
-    secondaryLabel="event.parties"
-  /> */}
-
-  {/* <WidgetVideoWithReviews overlay="black" /> */}
-
-  <WidgetAllExhibitorsColumnList />
-
-  {/* <FsVideo
-    background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
-    videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
-  /> */}
-
-  <WidgetVisitor
-    label="visitors.register"
-    secondaryLabel="event.parties"
-  />
+  <WidgetRoleButtons />
 
   <WidgetPartners
     label="partners.media.title"
@@ -93,19 +80,17 @@ const PageIndex = (props) => (
     center={true}
     limit={50}
   />
+
   </React.Fragment>
  
 ) 
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings: settings,
-    preload: ['allexhibitors', 'companies']
+    preload: []
   })
-
-  return {props: {}, revalidate: 10}
-
   
 })
 

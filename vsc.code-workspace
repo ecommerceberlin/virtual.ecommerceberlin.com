@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "/Users/az/GITHUB/site-components"
+			"path": "."
 		},
 		{
-			"path": "."
+			"path": "/Users/az/GITHUB/site-components"
 		}
 	]
 }

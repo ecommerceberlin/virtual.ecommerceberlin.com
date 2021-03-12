@@ -13,33 +13,27 @@ import {
 const settings = require('../../settings').default;
 
 
-const PagePremiumSingle = ({name}) => {
+const PagePremiumSingle = ({name}) => null; 
 
 
-  return (
+// (
 
-    <div>
-      <WidgetPremiumTicket name={name} resolve={item => item.translation_asset_id.indexOf(name)!==-1} />
-      <WidgetPremiumTickets />
-  
-    </div>
-  )
-
-} 
-
+//   <div>
+//     <WidgetPremiumTicket name={name} />
+//     <WidgetPremiumTickets setting="premium" />
+//   </div>
+// )
 
  export async function getStaticPaths() {
   
   const request = await fetch(`${settings.system.api}/tickets`)
-  const tickets = await request.json();
-
+  const {data} = await request.json();
   const scope = get(settings, "premium.ticketgroups", []);
-
-  const filtered = tickets.data.filter(t => scope.includes(t.group_id) );
+  const filtered = (data || []).filter(t => scope.includes(t.group_id) );
  
   const paths = filtered.map(row => ({ 
     params: {
-      name : row.translation_asset_id.replace('resources.upgrades.misc.', '')
+      name : row.details_url.replace('/premium/', '')
     }
   }))
 
@@ -57,14 +51,14 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings : settings,
-    preload: ['tickets', 'ticketgroups'],
+    preload: ['tickets'],
   })
 
   return {
     props : {
       name : "name" in params ? params.name : ""
     },
-    revalidate: 10
+    revalidate: 30
   }
 
 })

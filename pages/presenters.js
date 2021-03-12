@@ -19,7 +19,6 @@ import {
 const settings = require('../settings').default;
 
 const PageIndex = (props) => (
-
    
   <React.Fragment>
 
@@ -28,7 +27,6 @@ const PageIndex = (props) => (
   <WidgetVideoWithEventInfo />
 
   <WidgetFeaturedCompanies />
-
 
   <WidgetPartners
     label="partners.media.title"

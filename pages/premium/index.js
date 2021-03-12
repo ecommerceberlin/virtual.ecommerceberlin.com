@@ -9,22 +9,17 @@ import {
 
 const settings = require('../../settings').default;
 
-const PagePremium = () => (
+const PagePremium = () => <div></div>
   
-    <WidgetPremiumTickets />
-)
+    // <WidgetPremiumTickets />
+
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings : settings,
     preload: ['tickets', 'ticketgroups'],
   })
-
-  return {
-    props : {},
-    revalidate: 10
-  }
 
 })
 
