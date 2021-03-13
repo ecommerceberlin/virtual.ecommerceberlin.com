@@ -31,7 +31,7 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
-  {/* <WidgetTicketOwners icons={{
+  <WidgetTicketOwners icons={{
     TrendingUpIcon, 
     ImportantDevicesIcon, 
     CodeIcon, 
@@ -40,7 +40,7 @@ const PageIndex = (props) => (
     LanguageIcon, 
     NewReleasesIcon, 
     ShoppingBasketIcon
-  }}/> */}
+  }}/>
 
   <WidgetRegForm setting="streaming_user.register" />
 

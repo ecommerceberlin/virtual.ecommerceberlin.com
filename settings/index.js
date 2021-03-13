@@ -110,7 +110,7 @@ const settings = {
             label: "categories.title"
         },
         grid: {
-            xl: 3, lg: 3, md: 3, sm: 6, xs: 6 
+            xl: 3, lg: 3, md: 4, sm: 6, xs: 6 
         },
         ticket_group_id: 334,
         moreInfoLabel: "categories.become_a_sponsor",
