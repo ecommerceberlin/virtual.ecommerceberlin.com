@@ -4,7 +4,6 @@ import {
   connect,
   WidgetVideoWithEventInfo,
   WidgetRegForm,
-  WidgetPartners,
   reduxWrapper,
   configure,
   WidgetTicketOwners,
@@ -21,12 +20,12 @@ import LanguageIcon from '@material-ui/icons/Language';
 import NewReleasesIcon from '@material-ui/icons/NewReleases';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
+import Partners from '../compositions/Partners'
 
 const settings = require('../settings').default;
 
 const PageIndex = (props) => (
 
-   
   <React.Fragment>
 
   <WidgetVideoWithEventInfo />
@@ -44,42 +43,14 @@ const PageIndex = (props) => (
 
   <WidgetRegForm setting="streaming_user.register" />
 
-
   <WidgetPresenters wrapperProps={{
     label: "virtual.presenters.title",
     secondaryLabel: "virtual.presenters.description"
   }} limit={8} />
 
-
   <WidgetRoleButtons />
 
-  <WidgetPartners
-    label="partners.media.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('media') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    limit={50}
-  />
-
-  <WidgetPartners
-    label="partners.community.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('community') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    limit={50}
-  />
-
-  <WidgetPartners
-    label="partners.communication.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('communication') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    center={true}
-    limit={50}
-  />
+  <Partners />
 
   </React.Fragment>
  

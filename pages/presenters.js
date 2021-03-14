@@ -18,43 +18,21 @@ import {
 
 const settings = require('../settings').default;
 
+import Partners from '../compositions/Partners'
+
 const PageIndex = (props) => (
    
   <React.Fragment>
 
-  <WidgetPresenters limit={100} filter={null} />
-  
+  <WidgetPresenters wrapperProps={{
+    label: "virtual.presenters.title",
+    secondaryLabel: "virtual.presenters.description"
+  }} limit={100} />
+
   <WidgetVideoWithEventInfo />
 
-  <WidgetFeaturedCompanies />
+  <Partners/>
 
-  <WidgetPartners
-    label="partners.media.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('media') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    limit={50}
-  />
-
-  <WidgetPartners
-    label="partners.community.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('community') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    limit={50}
-  />
-
-  <WidgetPartners
-    label="partners.communication.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('communication') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    center={true}
-    limit={50}
-  />
   </React.Fragment>
  
 ) 
