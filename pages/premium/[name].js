@@ -9,22 +9,44 @@ import {
   get
 } from 'eventjuicer-site-components';
 
-
 const settings = require('../../settings').default;
 
 
-const PagePremiumSingle = ({name}) => null; 
+import {
+  TrendingUpIcon, 
+  ImportantDevicesIcon, 
+  CodeIcon, 
+  CloudUploadIcon, 
+  LocalShippingIcon,
+  LanguageIcon,
+  NewReleasesIcon, 
+  ShoppingBasketIcon
+} from '../../compositions/Icons'
 
+const PagePremiumSingle = ({name}) => (<div>
+    <WidgetPremiumTicket setting="premium" name={name}  icons={{
+      TrendingUpIcon, 
+      ImportantDevicesIcon, 
+      CodeIcon, 
+      CloudUploadIcon, 
+      LocalShippingIcon, 
+      LanguageIcon, 
+      NewReleasesIcon, 
+      ShoppingBasketIcon
+      }} />
+    <WidgetPremiumTickets setting="premium" icons={{
+      TrendingUpIcon, 
+      ImportantDevicesIcon, 
+      CodeIcon, 
+      CloudUploadIcon, 
+      LocalShippingIcon, 
+      LanguageIcon, 
+      NewReleasesIcon, 
+      ShoppingBasketIcon
+      }}  />
+</div>)
 
-// (
-
-//   <div>
-//     <WidgetPremiumTicket name={name} />
-//     <WidgetPremiumTickets setting="premium" />
-//   </div>
-// )
-
- export async function getStaticPaths() {
+export async function getStaticPaths() {
   
   const request = await fetch(`${settings.system.api}/tickets`)
   const {data} = await request.json();
