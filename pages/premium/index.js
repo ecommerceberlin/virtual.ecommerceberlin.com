@@ -4,7 +4,8 @@ import {
   connect,
   reduxWrapper,
   configure,
-  WidgetPremiumTickets
+  WidgetPremiumTickets,
+  WidgetRegForm
 } from 'eventjuicer-site-components';
 
 const settings = require('../../settings').default;
@@ -20,7 +21,7 @@ import {
   ShoppingBasketIcon
 } from '../../compositions/Icons'
 
-const PagePremium = () => (<WidgetPremiumTickets icons={{
+const PagePremium = () => (<><WidgetPremiumTickets icons={{
       TrendingUpIcon, 
       ImportantDevicesIcon, 
       CodeIcon, 
@@ -29,7 +30,9 @@ const PagePremium = () => (<WidgetPremiumTickets icons={{
       LanguageIcon, 
       NewReleasesIcon, 
       ShoppingBasketIcon
-      }} />)
+      }} />
+<WidgetRegForm setting="premium.register" />
+</> )
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 

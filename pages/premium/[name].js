@@ -6,7 +6,8 @@ import {
   WidgetPremiumTickets,
   reduxWrapper,
   configure,
-  get
+  get,
+  WidgetRegForm
 } from 'eventjuicer-site-components';
 
 const settings = require('../../settings').default;
@@ -34,6 +35,7 @@ const PagePremiumSingle = ({name}) => (<div>
       NewReleasesIcon, 
       ShoppingBasketIcon
       }} />
+    <WidgetRegForm setting="premium.register" />
     <WidgetPremiumTickets setting="premium" icons={{
       TrendingUpIcon, 
       ImportantDevicesIcon, 

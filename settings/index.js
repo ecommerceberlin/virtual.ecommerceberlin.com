@@ -18,6 +18,7 @@ const settings = {
         template : "heroGold",
         heading : "virtual.event.claim",
         subheading : "virtual.event.description",
+        insert: "https://res.cloudinary.com/eventjuicer/image/upload/v1615929566/ebevheadline.png"
     },
 
 
@@ -61,7 +62,35 @@ const settings = {
         disabledBuying: true,
         wrapperProps: {
             label: "categories.sponsorship.title"
-        }
+        },
+
+
+        register: {
+
+            wrapperProps: {
+                label : "virtual.prospect.title",
+                secondaryLabel: "virtual.prospect.description"
+            },
+
+            baseLabel: "virtual.register",
+            legend: "virtual.prospect.legend",
+
+            fields : [
+              {name: "email", required: true},
+              {name: "fname", required: true},
+              {name: "lname", required: true},
+              {name: "cname2", required: true},
+              {name: "phone", required: true}
+            ],
+
+            start : false,
+            ticket_id : 1899,
+            role: "",
+            email_template : null,
+            right : null,
+            report: "adam@zygadlewicz.com"
+        },
+
     },
    
     streaming_user : {
