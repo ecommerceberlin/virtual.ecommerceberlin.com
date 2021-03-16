@@ -22,68 +22,7 @@ const settings = {
 
 
     speakers : {
-
-        callforpapers: {
-            
-            fields: [
-                {name: "email", required: true},
-                {name: "fname", required: true},
-                {name: "lname", required: true},
-                {name: "cname2", required: true},
-                {name: "phone", required: true},
-                {name: "presenter", required: true},  
-                {
-                  name: "presentation_category", 
-                  required: true,
-                  options : "categories"
-                },
-                {name: "presentation_title", required: true},
-                {name: "presentation_description", required: true}
-            ],
-            
-              start: [
-                'presenter',
-                'presentation_title', 
-                'presentation_description',
-                'presentation_category',
-                'cname2'
-            ],
-
-            ticket_id : 1842,
-            email_template : "ebe-presenters-application",
-
-        },
-
-
-        benefits : {
-
-            label: "presenters.steps.title",
-        //    secondaryLabel: "presenters.steps.description",
-            baseLabel: "presenters.steps",
-            typography: "subtitle",
-            dense: true,
-            
-            items: [
-
-                {
-                    icon : "FaSearch",
-                    label :  'assessment',
-                },
-            
-                {
-                    icon : "FaPoll",
-                    label : 'contest'
-                },
-            
-                {
-                    icon : "FaTrophy",
-                    label : 'speaker'
-                }
-
-            ]
-        },
-
-      
+        og_template: "ebe5_template_en"       
     },
 
     ui : {
@@ -93,7 +32,8 @@ const settings = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
-               
+                {name: 'speakers', to: '/speakers'},
+                {name: 'sponsorship', to: '/premium'},
               ]
             },
             // {
