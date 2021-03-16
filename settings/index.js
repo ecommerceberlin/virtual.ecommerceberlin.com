@@ -12,8 +12,8 @@ const settings = {
     },
     hero : {
         showable: ["date"],
-        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1615545797/virtualebe.mp4",
-        background : "https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615545795/virtualebe.jpg",
+        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1615909963/virtualebe.mp4",
+        background : "https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615909961/virtualebe.jpg",
         overlay : "black",
         template : "heroGold",
         heading : "virtual.event.claim",
