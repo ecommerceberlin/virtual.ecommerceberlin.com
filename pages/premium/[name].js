@@ -46,6 +46,9 @@ const PagePremiumSingle = ({name}) => (<div>
       NewReleasesIcon, 
       ShoppingBasketIcon
       }}  />
+
+      <Partners />
+      
 </div>)
 
 export async function getStaticPaths() {

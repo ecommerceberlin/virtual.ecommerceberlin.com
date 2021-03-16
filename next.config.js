@@ -22,6 +22,13 @@ const withTM = require('next-transpile-modules')(['eventjuicer-site-components']
       // should handle (these are only required when setting up domain routing)
 
     },
+
+    async rewrites() { return [{
+        source: '/presenters',
+        destination: '/speakers',
+      },
+    ]},
+
   
   });
 

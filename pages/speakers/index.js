@@ -7,7 +7,12 @@ import {
   WidgetRegForm
 } from 'eventjuicer-site-components';
 
+import Partners from '../../compositions/Partners'
+
+
 const settings = require('../../settings').default;
+
+
 
 const PagePresenters = () => (
   <>
@@ -19,6 +24,9 @@ const PagePresenters = () => (
   <WidgetVideoWithEventInfo />
 
   <WidgetRegForm setting="streaming_user.register" />
+
+  <Partners />
+
   </>
 )
 

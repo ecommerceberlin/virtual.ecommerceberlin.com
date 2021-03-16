@@ -8,6 +8,9 @@ import {
   WidgetRegForm
 } from 'eventjuicer-site-components';
 
+import Partners from '../../compositions/Partners'
+
+
 const settings = require('../../settings').default;
 
 import {
@@ -32,6 +35,7 @@ const PagePremium = () => (<><WidgetPremiumTickets icons={{
       ShoppingBasketIcon
       }} />
 <WidgetRegForm setting="premium.register" />
+<Partners />
 </> )
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {

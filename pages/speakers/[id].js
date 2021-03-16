@@ -13,6 +13,8 @@ import {
   
   import Head from 'next/head'
 
+  import Partners from '../../compositions/Partners'
+
   const settings = require('../../settings').default;
 
 
@@ -30,6 +32,8 @@ import {
       label: "virtual.presenters.featured",
       secondaryLabel: "virtual.presenters.description"
       }} limit={8} />
+
+      <Partners />
 
   </>
 )
