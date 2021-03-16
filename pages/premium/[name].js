@@ -10,8 +10,9 @@ import {
   WidgetRegForm
 } from 'eventjuicer-site-components';
 
-const settings = require('../../settings').default;
+import Partners from '../../compositions/Partners'
 
+const settings = require('../../settings').default;
 
 import {
   TrendingUpIcon, 
