@@ -88,7 +88,7 @@ const settings = {
             role: "",
             email_template : null,
             right : null,
-            report: "adam@zygadlewicz.com"
+            report: "hello@ecommerceberlin.com"
         },
 
     },
