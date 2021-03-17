@@ -17,7 +17,7 @@ const PageLegalParticipantsData = () => (
    
 
 
-  <Wrapper first label="Participants.data-agreement.title">
+  <Wrapper first label="visitors.data-agreement.title">
     <Markdown>{`
     
 ## General information and contact details of the Administrator

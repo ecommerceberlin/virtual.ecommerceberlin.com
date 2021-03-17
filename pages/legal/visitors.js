@@ -68,7 +68,7 @@ const PageLegalVisitors = () => (
 
 ### 6. Personal data
 
-All information about personal data protection and privacy one can find here in our​​ ​<a href="https://virtual.ecommerceberlin.com/legal/visitors-data">Information about personal data protection
+All information about personal data protection and privacy one can find here in our​​ ​https://virtual.ecommerceberlin.com/legal/visitors-data Information about personal data protection
 
 ## 7. Final provisions
 
