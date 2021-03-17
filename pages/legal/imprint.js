@@ -18,9 +18,9 @@ const PageLegalImprint = () => (
 
 E-commerce Capitals Sp. z o.o. Sp. k.
 
-Jana Matejki 52/4
+Botaniczna 26/2
 
-60-770, Poznan, Poland
+60-586, Poznan, Poland
 
 ### Place of administration
 
@@ -49,23 +49,23 @@ The operators of those linked sites are solely and exclusively responsible for t
 
 ### Terms and Conditions of Use
 
-These Terms and Conditions of Use govern the use of the website for E-commerce Berlin Expo (hereinafter, “E-commerce Expo”), 
+These Terms and Conditions of Use govern the use of the website for E-commerce Berlin Virtual Edition (hereinafter, “E-commerce Berlin”), 
 as well as the use of the contents found there, including but not limited to the use of descriptions, designations, etc. (hereinafter collectively, “CONTENTS”)
 
-By using the website of E-commerce Expo, you acknowledge that you have read and understand the following Terms and Conditions of Use. Please read these terms and conditions carefully before you use our site:
+By using the website of E-commerce Berlin, you acknowledge that you have read and understand the following Terms and Conditions of Use. Please read these terms and conditions carefully before you use our site:
 
-The website of E-commerce Expo and the CONTENTS available through it are protected by copyright. Their usage is subject to prevailing copyright laws.
+The website of E-commerce Berlin and the CONTENTS available through it are protected by copyright. Their usage is subject to prevailing copyright laws.
 
-The E-commerce Expo website may not be modified, copied, republished, transmitted, circulated or stored. 
-The CONTENTS found on the E-commerce Expo website are intended to facilitate the leasing of the products listed. 
+The E-commerce Berlin website may not be modified, copied, republished, transmitted, circulated or stored. 
+The CONTENTS found on the E-commerce Berlin website are intended to facilitate the leasing of the products listed. 
 We hereby expressly state that despite careful selection, no liability whatsoever can be assumed for the contents that are accessed via third party (external) links.
 
-E-commerce Expo bears no responsibility for the contents of a site that is reached through such a link or by indirect reference to it. 
-Information and data on the E-commerce Expo website are made available by means of hyperlink, as are the information and data of other websites. 
-These information and data are intended for general informational purposes. E-commerce Expo makes no warranty as to the currency, accuracy and completeness of said information or data. 
-E-commerce Expo expressly distances itself from the contents of ALL sites linked to our website.
+E-commerce Berlin bears no responsibility for the contents of a site that is reached through such a link or by indirect reference to it. 
+Information and data on the E-commerce Berlin website are made available by means of hyperlink, as are the information and data of other websites. 
+These information and data are intended for general informational purposes. E-commerce Berlin makes no warranty as to the currency, accuracy and completeness of said information or data. 
+E-commerce Berlin expressly distances itself from the contents of ALL sites linked to our website.
 
-E-commerce Expo reserves the right to apply modifications to these Terms and Conditions of Use at any time without notice, and you hereby affirm that you accept these modified Terms and Conditions of Use. 
+E-commerce Berlin reserves the right to apply modifications to these Terms and Conditions of Use at any time without notice, and you hereby affirm that you accept these modified Terms and Conditions of Use. 
 Please keep yourself regularly informed of any modifications to these Terms and Conditions of Use.
 
   `}</Markdown></Wrapper>)
