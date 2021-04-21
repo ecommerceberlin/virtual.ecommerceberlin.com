@@ -237,13 +237,13 @@ const settings = {
     schedule : {
         categories: {
             logistics: {color: "#000000", backgroundColor: "#96ADC8"},
-            expansions: {color: "#000000", backgroundColor: "#D7FFAB"},
+            expansion: {color: "#000000", backgroundColor: "#D7FFAB"},
             marketing: {color: "#000000", backgroundColor: "#FCFF6C"},
-            conversions: {color: "#000000", backgroundColor: "#D89D6A"},
-            new_development: {color: "#FFFFFF", backgroundColor: "#6D454C"},
-            it: {color: "#FFFFFF", backgroundColor: "#81667A"},
+            conversion: {color: "#000000", backgroundColor: "#D89D6A"},
+            new_devs: {color: "#FFFFFF", backgroundColor: "#6D454C"},
+            it_cloud: {color: "#FFFFFF", backgroundColor: "#81667A"},
             omnichannel: {color: "#FFFFFF", backgroundColor: "#EE6352"},
-            coronavirus: {color: "#000000", backgroundColor: "#F79D84"},
+            covid: {color: "#000000", backgroundColor: "#F79D84"},
         },
         times : {
             '8:59': 'block',
