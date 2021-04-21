@@ -234,14 +234,26 @@ const settings = {
     },
 
     schedule : {
+        categories: {
+            logistics: {color: "#000000", backgroundColor: "#96ADC8"},
+            expansions: {color: "#000000", backgroundColor: "#D7FFAB"},
+            marketing: {color: "#000000", backgroundColor: "#FCFF6C"},
+            conversions: {color: "#000000", backgroundColor: "#D89D6A"},
+            new_development: {color: "#FFFFFF", backgroundColor: "#6D454C"},
+            it: {color: "#FFFFFF", backgroundColor: "#81667A"},
+            omnichannel: {color: "#FFFFFF", backgroundColor: "#EE6352"},
+            coronavirus: {color: "#000000", backgroundColor: "#F79D84"},
+        },
         times : {
+            '8:59': 'block',
             '9:00': 'presentation',
             '9:40': 'presentation',
             '10:20': 'presentation',
+            '10:59': 'block',
             '11:00': 'presentation',
             '11:40': 'presentation',
             '12:20': 'presentation'
-          },    
+          },
           venues : {
             A: { company_id: 0 },
             B: { company_id: 0 }
