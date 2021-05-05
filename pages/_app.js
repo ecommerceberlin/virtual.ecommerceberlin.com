@@ -5,7 +5,7 @@ import Head from 'next/head'
 const MyCustomApp = (props) => <NextApp {...props} head={
     <MyHead 
         url="/" 
-        image="https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615550856/virtualebe_reg.jpg"
+        image="https://res.cloudinary.com/eventjuicer/image/upload/v1620250720/ebev1_template_generic.png"
     >{(data) => <Head>{data}</Head>}</MyHead> 
 } />
 
