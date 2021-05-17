@@ -5,7 +5,8 @@ import {
   WidgetRegForm,
   reduxWrapper,
   configure,
-  WidgetTicketOwners
+  WidgetTicketOwners,
+  WidgetVideoWithEventInfo
 } from 'eventjuicer-site-components';
 
 import Partners from '../compositions/Partners'
