@@ -32,27 +32,32 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
+  <WidgetRegForm setting="streaming_user.register" />
+
+  <WidgetRoleButtons setting="schedule_teaser" />
+
+  <WidgetPresenters wrapperProps={{
+  label: "virtual.presenters.featured",
+  secondaryLabel: "virtual.presenters.description"
+  }} limit={8} link={(item) => `/speakers/${item.id}` }  />
+
   <WidgetTicketOwners icons={{
-    TrendingUpIcon, 
-    ImportantDevicesIcon, 
-    CodeIcon, 
-    CloudUploadIcon, 
-    LocalShippingIcon, 
-    LanguageIcon, 
-    NewReleasesIcon, 
-    ShoppingBasketIcon
+  TrendingUpIcon, 
+  ImportantDevicesIcon, 
+  CodeIcon, 
+  CloudUploadIcon, 
+  LocalShippingIcon, 
+  LanguageIcon, 
+  NewReleasesIcon, 
+  ShoppingBasketIcon
   }}/>
+
+  <WidgetRoleButtons setting="schedule_teaser" />
 
   <WidgetRegForm setting="streaming_user.register" />
 
-  <WidgetPresenters wrapperProps={{
-    label: "virtual.presenters.featured",
-    secondaryLabel: "virtual.presenters.description"
-  }} limit={8} link={(item) => `/speakers/${item.id}` }  />
-
-  <WidgetRoleButtons />
-
   <Partners />
+
 
   </React.Fragment>
  

@@ -185,15 +185,22 @@ const settings = {
 
     },
 
+
+    schedule_teaser : {
+        accent : "gold",
+        items : [
+        {
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1621248321/schedule-teaser.png',
+          label: 'virtual.schedule_teaser',
+          width: '100%',
+          target : "/schedule"
+        },
+        ]
+    },
+
     rolebuttons : {
         accent : "gold",
         items : [
-        // {
-        //   url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg',
-        //   label: 'common.visitor',
-        //   width: '50%',
-        //   target : "/visit"
-        // },
         {
           url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/exhibit.jpg',
           label: 'virtual.looking_for_expo',
@@ -279,7 +286,7 @@ const settings = {
 
     appbar : {
         links: [
-           // {label: "E-commerce Germany Awards", color: "secondary",  href: "https://ecommercegermanyawards.com", variant: "outlined"}
+            {label: "REGISTER", color: "secondary",  href: "/register", variant: "contained"}
         ],
     },
 

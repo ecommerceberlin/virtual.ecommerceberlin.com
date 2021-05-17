@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {WidgetPartners} from 'eventjuicer-site-components'
+import {WidgetPartners, WidgetRoleButtons} from 'eventjuicer-site-components'
 
 
 
@@ -43,6 +43,9 @@ item.logotype.indexOf('cloudinary') > -1
 center={true}
 limit={50}
 />
+
+
+  <WidgetRoleButtons />
 
 </React.Fragment>)
 

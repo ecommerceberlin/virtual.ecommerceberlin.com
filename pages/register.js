@@ -2,35 +2,38 @@ import React from 'react'
 
 import {
   connect,
+  WidgetRegForm,
   reduxWrapper,
   configure,
-  WidgetVideoWithEventInfo,
-  WidgetRegForm,
-  WidgetPresenters,
-  WidgetRoleButtons
+  WidgetTicketOwners
 } from 'eventjuicer-site-components';
- 
-const settings = require('../settings').default;
 
 import Partners from '../compositions/Partners'
+import Schedule from '../compositions/Schedule'
+
+const settings = require('../settings').default;
 
 const PageIndex = (props) => (
   <React.Fragment>
-    <WidgetVideoWithEventInfo />
-    <WidgetRegForm setting="streaming_user.register" />
-    <WidgetPresenters wrapperProps={{
-    label: "virtual.presenters.title",
-    secondaryLabel: "virtual.presenters.description"
-    }} limit={8} />
-    <Partners />
+
+  <WidgetRegForm setting="streaming_user.register" />    
+ 
+  <WidgetVideoWithEventInfo />
+
+  <Schedule /> 
+  
+  <WidgetTicketOwners />
+  <Partners />
   </React.Fragment>
 ) 
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
+
   return await configure(props, {
     settings: settings,
-    preload: []
+    preload: ["presenters"]
   })
+  
 })
 
 export default connect()(PageIndex);
