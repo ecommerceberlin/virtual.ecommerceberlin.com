@@ -5,11 +5,11 @@ import {
   WidgetRegForm,
   reduxWrapper,
   configure,
-  WidgetTicketOwners
 } from 'eventjuicer-site-components';
 
 import Partners from '../compositions/Partners'
 import Schedule from '../compositions/Schedule'
+import ThematicTracks from '../compositions/ThematicTracks'
 
 const settings = require('../settings').default;
 
@@ -17,7 +17,7 @@ const PageIndex = (props) => (
   <React.Fragment>
   <Schedule /> 
   <WidgetRegForm setting="streaming_user.register" />    
-  <WidgetTicketOwners />
+  <ThematicTracks />
   <Partners />
   </React.Fragment>
 ) 

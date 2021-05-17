@@ -10,45 +10,28 @@ import {
   WidgetRoleButtons
 } from 'eventjuicer-site-components';
 
-import {
-  TrendingUpIcon, 
-  ImportantDevicesIcon, 
-  CodeIcon, 
-  CloudUploadIcon, 
-  LocalShippingIcon,
-  LanguageIcon,
-  NewReleasesIcon, 
-  ShoppingBasketIcon
-} from '../compositions/Icons'
 
 import Partners from '../compositions/Partners'
 import ThematicTracks from '../compositions/ThematicTracks'
-
 const settings = require('../settings').default;
 
 const PageIndex = (props) => (
 
   <React.Fragment>
 
+
   <WidgetVideoWithEventInfo />
 
   <WidgetRegForm setting="streaming_user.register" />
 
-  <WidgetRoleButtons setting="schedule_teaser" />
-
   <WidgetPresenters wrapperProps={{
-  label: "virtual.presenters.featured",
-  secondaryLabel: "virtual.presenters.description"
+    label: "virtual.presenters.featured",
+    secondaryLabel: "virtual.presenters.description"
   }} limit={8} link={(item) => `/speakers/${item.id}` }  />
 
   <ThematicTracks />
 
-  <WidgetRoleButtons setting="schedule_teaser" />
-
-  <WidgetRegForm setting="streaming_user.register" />
-
   <Partners />
-
 
   </React.Fragment>
  
