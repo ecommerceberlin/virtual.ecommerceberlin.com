@@ -23,7 +23,8 @@ const settings = {
 
 
     speakers : {
-        og_template: "ebev1_template_en"       
+        og_template: "ebev1_template_en",
+        baseLabel: "profile"       
     },
 
     ui : {
