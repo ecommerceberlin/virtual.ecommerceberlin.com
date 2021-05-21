@@ -28,7 +28,7 @@
   "homepage": "https://github.com/ecommerceberlin/virtual.ecommerceberlin.com#readme",
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
-    "eventjuicer-site-components": "3.5.14",
+    "eventjuicer-site-components": "3.5.15",
     "next": "10.2.0",
     "next-transpile-modules": "^7.0.0",
     "react": "^17.0.2",
