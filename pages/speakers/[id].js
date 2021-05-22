@@ -31,7 +31,7 @@ import {
       <WidgetPresenters wrapperProps={{
       label: "virtual.presenters.featured",
       secondaryLabel: "virtual.presenters.description"
-      }} limit={8} />
+      }} limit={8} link={(item) => `/speakers/${item.id}` } />
 
       <Partners />
 

@@ -261,7 +261,8 @@ const settings = {
             '10:59': 'block',
             '11:00': 'presentation',
             '11:40': 'presentation',
-            '12:20': 'presentation'
+            '12:20': 'presentation',
+            '13:00': 'presentation'
           },
           venues : {
             A: { company_id: 0 },
