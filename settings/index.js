@@ -95,9 +95,47 @@ const settings = {
 
     },
    
+
+    streaming : {
+        regform: "streaming_user.register",
+        api: "https://proxy.eventjuicer.com/api/schedule",
+        discordProps: {
+            avatars: false,
+            join: "https://discord.gg/VZW66eUGC9",
+            title: "streaming.chat.title",
+            showTime: false
+        },
+        playerProps: {
+            controls: true, 
+            playing: true, 
+            light: false,
+            loop: true,
+            width: "100%",
+            height: "100%"
+        },
+        stages: {
+            A: {
+                embed: "player",
+                url: "https://youtu.be/fih7dfpLr2g",
+                discord: null,
+                restricted: true,
+                sponsor: null,
+                placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
+            },
+            B: {
+                embed: "player",
+                url: "https://youtu.be/PUEL2MCzxMI",
+                discord: null,
+                restricted: true,
+                sponsor: null,
+                placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
+            }
+        }
+    },
+
+
     streaming_user : {
-
-
+        
         register: {
 
             wrapperProps: {
