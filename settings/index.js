@@ -8,7 +8,7 @@ const settings = {
         api : "https://api.eventjuicer.com/v1/public/hosts/virtual.ecommerceberlin.com",
         post_api : "https://api.eventjuicer.com/v1/public/hosts/virtual.ecommerceberlin.com/register",
         og_image : "https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615550856/virtualebe_reg.jpg",
-    
+        service_api : "https://api.eventjuicer.com/v1/services"
     },
     hero : {
         showable: ["date"],
