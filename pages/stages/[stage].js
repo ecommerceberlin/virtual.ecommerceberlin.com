@@ -23,8 +23,8 @@ import {
   
     return {
       paths: [
-        { params: { stage: "A"} },
-        { params: { stage: "B"} }
+        { params: { stage: "a"} },
+        { params: { stage: "b"} }
       ],
       fallback: "blocking" 
     };
@@ -44,7 +44,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
         stage: stage
       },
-      revalidate : 30
+      revalidate : 60
     }
   })
   
