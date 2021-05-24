@@ -120,7 +120,8 @@ const settings = {
                 url: "https://www.youtu.be/Jdk6d4jroxI",
                 discord: null,
                 restricted: true,
-                sponsors: [],
+                sponsors: [122008, 122030],
+                //sponsors: [122041, 122029],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
 
             },
@@ -129,7 +130,8 @@ const settings = {
                 url: "https://youtu.be/IrPNGxmkHGA",
                 discord: null,
                 restricted: true,
-                sponsors: [],
+                sponsors: [122043, 121981],
+                 //sponsors: [122032, 121989],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
             }
         }

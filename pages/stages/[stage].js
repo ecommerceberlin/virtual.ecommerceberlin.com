@@ -44,7 +44,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
         stage: stage
       },
-      revalidate : 10
+      revalidate : 30
     }
   })
   
