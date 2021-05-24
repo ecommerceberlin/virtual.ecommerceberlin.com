@@ -103,6 +103,7 @@ const settings = {
             avatars: false,
             join: "https://discord.gg/VZW66eUGC9",
             title: "streaming.chat.title",
+            description: "streaming.chat.description",
             showTime: false
         },
         playerProps: {
@@ -116,18 +117,19 @@ const settings = {
         stages: {
             A: {
                 embed: "player",
-                url: "https://youtu.be/fih7dfpLr2g",
+                url: "https://www.youtu.be/Jdk6d4jroxI",
                 discord: null,
                 restricted: true,
-                sponsor: null,
+                sponsors: [],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
+
             },
             B: {
                 embed: "player",
-                url: "https://youtu.be/PUEL2MCzxMI",
+                url: "https://youtu.be/IrPNGxmkHGA",
                 discord: null,
                 restricted: true,
-                sponsor: null,
+                sponsors: [],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
             }
         }
