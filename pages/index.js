@@ -7,7 +7,8 @@ import {
   reduxWrapper,
   configure,
   WidgetPresenters,
-  WidgetRoleButtons
+  WidgetRoleButtons,
+  WidgetStage
 } from 'eventjuicer-site-components';
 
 import {
@@ -29,6 +30,8 @@ const settings = require('../settings').default;
 const PageIndex = (props) => (
 
   <React.Fragment>
+
+  <WidgetStage stage="a" />
 
   <WidgetVideoWithEventInfo />
 
