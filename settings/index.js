@@ -117,7 +117,8 @@ const settings = {
         stages: {
             A: {
                 embed: "player",
-                url: "https://www.youtu.be/Jdk6d4jroxI",
+                url: "https://youtu.be/QlG4QQLunVM",
+                //url: "https://youtu.be/ObJGCUZxYT0",
                 discord: null,
                 restricted: true,
                 sponsors: [122008, 122030],
@@ -127,7 +128,8 @@ const settings = {
             },
             B: {
                 embed: "player",
-                url: "https://youtu.be/IrPNGxmkHGA",
+                url: "https://youtu.be/CnEdhbISCPY",
+                //url: "https://youtu.be/tmKUM-Tzwdw",
                 discord: null,
                 restricted: true,
                 sponsors: [122043, 121981],
