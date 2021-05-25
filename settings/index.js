@@ -296,9 +296,9 @@ const settings = {
             covid: {color: "#000000", backgroundColor: "#F79D84"},
         },
         times : {
-            '8:59': 'block',
-            '9:00': 'presentation',
-            '9:40': 'presentation',
+            '08:59': 'block',
+            '09:00': 'presentation',
+            '09:40': 'presentation',
             '10:20': 'presentation',
             '10:59': 'block',
             '11:00': 'presentation',
