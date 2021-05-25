@@ -34,6 +34,7 @@ const settings = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
+                {name: 'streaming', to: '/stages/a'},
                 {name: 'speakers', to: '/speakers'},
                 {name: 'schedule', to: '/schedule'},
                 {name: 'sponsorship', to: '/premium'},
