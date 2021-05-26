@@ -3,7 +3,6 @@ import {
     WidgetRegForm,
     WidgetPresenter,
     WidgetPresenters,
-    // WidgetSchedule,
     WidgetVideoWithEventInfo,
     // WidgetRoleButtons,
     reduxWrapper,
@@ -12,9 +11,7 @@ import {
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
-
   import Partners from '../../compositions/Partners'
-
   const settings = require('../../settings').default;
 
 

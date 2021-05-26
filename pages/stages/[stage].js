@@ -3,7 +3,6 @@ import React from 'react'
 import {
     connect,
     WidgetStage,
-    WidgetSchedule,
     reduxWrapper,
     configure
   } from 'eventjuicer-site-components';

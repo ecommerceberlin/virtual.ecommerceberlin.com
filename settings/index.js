@@ -118,23 +118,23 @@ const settings = {
         stages: {
             A: {
                 embed: "player",
-                url: "https://youtu.be/QlG4QQLunVM",
-                //url: "https://youtu.be/ObJGCUZxYT0",
+                //url: "https://youtu.be/QlG4QQLunVM",
+                url: "https://youtu.be/ObJGCUZxYT0",
                 discord: null,
                 restricted: true,
-                sponsors: [122008, 122030],
-                //sponsors: [122041, 122029],
+                //sponsors: [122008, 122030],
+                sponsors: [122041, 122029],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
 
             },
             B: {
                 embed: "player",
-                url: "https://youtu.be/CnEdhbISCPY",
-                //url: "https://youtu.be/tmKUM-Tzwdw",
+                //url: "https://youtu.be/CnEdhbISCPY",
+                url: "https://youtu.be/tmKUM-Tzwdw",
                 discord: null,
                 restricted: true,
-                sponsors: [122043, 121981],
-                 //sponsors: [122032, 121989],
+                //sponsors: [122043, 121981],
+                sponsors: [122032, 121989],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
             }
         }
