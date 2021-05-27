@@ -34,10 +34,10 @@ const settings = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
-                {name: 'streaming', to: '/stages/a'},
-                {name: 'speakers', to: '/speakers'},
-                {name: 'schedule', to: '/schedule'},
-                {name: 'sponsorship', to: '/premium'},
+                // {name: 'streaming', to: '/stages/a'},
+                // {name: 'speakers', to: '/speakers'},
+                // {name: 'schedule', to: '/schedule'},
+                // {name: 'sponsorship', to: '/premium'},
               ]
             },
             // {
@@ -95,45 +95,91 @@ const settings = {
         },
 
     },
-   
 
-    streaming : {
+
+    streaming1 : {
         regform: "streaming_user.register",
         api: "https://proxy.eventjuicer.com/api/schedule",
+        hints: false,
+        wrapperProps: {
+            label: "archive.day1",
+            dense: true
+        },
         discordProps: {
             avatars: false,
-            join: "https://discord.gg/VZW66eUGC9",
+            join: "",
             title: "streaming.chat.title",
             description: "streaming.chat.description",
             showTime: false
         },
         playerProps: {
             controls: true, 
-            playing: true, 
-            light: false,
-            loop: true,
+            playing: false, 
+            light: true,
+            loop: false,
             width: "100%",
             height: "100%"
         },
         stages: {
             A: {
                 embed: "player",
-                //url: "https://youtu.be/QlG4QQLunVM",
+                url: "https://youtu.be/QlG4QQLunVM",
+                discord: null,
+                restricted: true,
+                sponsors: [122008, 122030],
+                placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
+
+            },
+            B: {
+                embed: "player",
+                url: "https://youtu.be/CnEdhbISCPY",
+                discord: null,
+                restricted: true,
+                sponsors: [122043, 121981],
+                placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
+            }
+        }
+    },
+   
+
+    streaming2 : {
+        regform: "streaming_user.register",
+        api: "https://proxy.eventjuicer.com/api/schedule",
+        hints: false,
+        wrapperProps: {
+            label: "archive.day2",
+            dense: true
+        },
+        discordProps: {
+            avatars: false,
+            join: "",
+            title: "streaming.chat.title",
+            description: "streaming.chat.description",
+            showTime: false
+        },
+        playerProps: {
+            controls: true, 
+            playing: false, 
+            light: true,
+            loop: false,
+            width: "100%",
+            height: "100%"
+        },
+        stages: {
+            A: {
+                embed: "player",
                 url: "https://youtu.be/ObJGCUZxYT0",
                 discord: null,
                 restricted: true,
-                //sponsors: [122008, 122030],
                 sponsors: [122041, 122029],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
 
             },
             B: {
                 embed: "player",
-                //url: "https://youtu.be/CnEdhbISCPY",
                 url: "https://youtu.be/tmKUM-Tzwdw",
                 discord: null,
                 restricted: true,
-                //sponsors: [122043, 121981],
                 sponsors: [122032, 121989],
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
             }
@@ -333,7 +379,7 @@ const settings = {
 
     appbar : {
         links: [
-            {label: "REGISTER", color: "secondary",  href: "/register", variant: "contained"}
+            // {label: "REGISTER", color: "secondary",  href: "/register", variant: "contained"}
         ],
     },
 

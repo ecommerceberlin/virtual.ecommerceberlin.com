@@ -10,7 +10,7 @@ const Schedule = () => {
 
     return (
         <>
-        {/* <WidgetSchedule 
+        <WidgetSchedule 
             key="2021-05-26"
             inserts={{
                 "A08:59": [["id", 122008]],
@@ -20,7 +20,7 @@ const Schedule = () => {
             }}
             day="2021-05-26" 
             wrapperProps={{label:"schedule.day1.title"}} 
-        /> */}
+        />
 
         <WidgetSchedule 
             key="2021-05-27"

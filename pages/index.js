@@ -3,27 +3,17 @@ import React from 'react'
 import {
   connect,
   WidgetVideoWithEventInfo,
-  WidgetRegForm,
+  // WidgetRegForm,
   reduxWrapper,
   configure,
-  WidgetPresenters,
-  WidgetRoleButtons,
-  WidgetStage
+  // WidgetPresenters,
+  // WidgetRoleButtons,
+  WidgetStage,
+  WidgetSchedule
 } from 'eventjuicer-site-components';
 
-import {
-  TrendingUpIcon, 
-  ImportantDevicesIcon, 
-  CodeIcon, 
-  CloudUploadIcon, 
-  LocalShippingIcon,
-  LanguageIcon,
-  NewReleasesIcon, 
-  ShoppingBasketIcon
-} from '../compositions/Icons'
-
 import Partners from '../compositions/Partners'
-import ThematicTracks from '../compositions/ThematicTracks'
+// import ThematicTracks from '../compositions/ThematicTracks'
 
 const settings = require('../settings').default;
 
@@ -31,28 +21,53 @@ const PageIndex = (props) => (
 
   <React.Fragment>
 
-  <WidgetStage stage="a" />
-
   <WidgetVideoWithEventInfo />
 
-  <WidgetRegForm setting="streaming_user.register" />
+<WidgetSchedule 
+      key="2021-05-26"
+      inserts={{
+          "A08:59": [["id", 122008]],
+          "B08:59": [["id", 122043]],
+          "A10:59": [["id", 122030]],
+          "B10:59": [["id", 121981]],
+      }}
+      day="2021-05-26" 
+      wrapperProps={{label:"schedule.day1.title"}} 
+  />
 
-  <WidgetRoleButtons setting="schedule_teaser" />
+  <WidgetStage setting="streaming1" stage="a" />
+  <WidgetStage setting="streaming1" stage="b" />
 
-  <WidgetPresenters wrapperProps={{
+
+
+        <WidgetSchedule 
+            key="2021-05-27"
+            inserts={{
+                "A08:59": [["id", 122041]],
+                "B08:59": [["id", 122032]],
+                "A10:59": [["id", 122029]],
+                "B10:59": [["id", 121989]],
+            }}
+            day="2021-05-27" 
+            wrapperProps={{label:"schedule.day2.title"}} 
+        />
+        
+        
+  <WidgetStage setting="streaming2" stage="a" />
+  <WidgetStage setting="streaming2" stage="b" />
+
+
+  {/* <WidgetRegForm setting="streaming_user.register" /> */}
+  {/* <WidgetRoleButtons setting="schedule_teaser" /> */}
+  {/* <WidgetPresenters wrapperProps={{
   label: "virtual.presenters.featured",
   secondaryLabel: "virtual.presenters.description"
-  }} limit={8} link={(item) => `/speakers/${item.id}` }  />
-
-  <ThematicTracks />
-
-  <WidgetRoleButtons setting="schedule_teaser" />
-
-  <WidgetRegForm setting="streaming_user.register" />
+  }} limit={8} link={(item) => `/speakers/${item.id}` }  /> */}
+  {/* <ThematicTracks /> */}
+  {/* <WidgetRoleButtons setting="schedule_teaser" /> */}
+  {/* <WidgetRegForm setting="streaming_user.register" /> */}
 
   <Partners />
-
-
   </React.Fragment>
  
 ) 
