@@ -97,7 +97,8 @@ const settings = {
     },
 
 
-    streaming1 : {
+    streaming1a : {
+        // stage: "a",
         regform: "streaming_user.register",
         api: "https://proxy.eventjuicer.com/api/schedule",
         hints: false,
@@ -130,6 +131,35 @@ const settings = {
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
 
             },
+        }
+    },
+   
+
+    streaming1b : {
+        // stage: "b",
+        regform: "streaming_user.register",
+        api: "https://proxy.eventjuicer.com/api/schedule",
+        hints: false,
+        wrapperProps: {
+            label: "archive.day1",
+            dense: true
+        },
+        discordProps: {
+            avatars: false,
+            join: "",
+            title: "streaming.chat.title",
+            description: "streaming.chat.description",
+            showTime: false
+        },
+        playerProps: {
+            controls: true, 
+            playing: false, 
+            light: true,
+            loop: false,
+            width: "100%",
+            height: "100%"
+        },
+        stages: {
             B: {
                 embed: "player",
                 url: "https://youtu.be/CnEdhbISCPY",
@@ -142,7 +172,8 @@ const settings = {
     },
    
 
-    streaming2 : {
+    streaming2a : {
+        stage: "a",
         regform: "streaming_user.register",
         api: "https://proxy.eventjuicer.com/api/schedule",
         hints: false,
@@ -175,6 +206,34 @@ const settings = {
                 placeholder: "https://res.cloudinary.com/eventjuicer/image/upload/v1616511215/tehonline_fpeventcover_start.png"
 
             },
+        }
+    },
+
+    streaming2b : {
+        // stage: "b",
+        regform: "streaming_user.register",
+        api: "https://proxy.eventjuicer.com/api/schedule",
+        hints: false,
+        wrapperProps: {
+            label: "archive.day2",
+            dense: true
+        },
+        discordProps: {
+            avatars: false,
+            join: "",
+            title: "streaming.chat.title",
+            description: "streaming.chat.description",
+            showTime: false
+        },
+        playerProps: {
+            controls: true, 
+            playing: false, 
+            light: true,
+            loop: false,
+            width: "100%",
+            height: "100%"
+        },
+        stages: {
             B: {
                 embed: "player",
                 url: "https://youtu.be/tmKUM-Tzwdw",
@@ -185,8 +244,6 @@ const settings = {
             }
         }
     },
-
-
     streaming_user : {
         
         register: {

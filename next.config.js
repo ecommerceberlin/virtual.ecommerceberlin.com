@@ -34,6 +34,14 @@ const withTM = require('next-transpile-modules')(['eventjuicer-site-components']
       },
     ]},
 
-  
+
+    async redirects() {return [{
+          source: '/stages/:stage',
+          destination: '/', // Matched parameters can be used in the destination
+          permanent: false,
+        },
+    ]},
+
+
   });
 

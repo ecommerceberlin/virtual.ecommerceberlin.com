@@ -35,8 +35,8 @@ const PageIndex = (props) => (
       wrapperProps={{label:"schedule.day1.title"}} 
   />
 
-  <WidgetStage setting="streaming1" stage="a" />
-  <WidgetStage setting="streaming1" stage="b" />
+  <WidgetStage setting="streaming1a" stage="a" />
+  <WidgetStage setting="streaming1b" stage="b" />
 
 
 
@@ -53,8 +53,8 @@ const PageIndex = (props) => (
         />
         
         
-  <WidgetStage setting="streaming2" stage="a" />
-  <WidgetStage setting="streaming2" stage="b" />
+  <WidgetStage setting="streaming2a" stage="a" />
+  <WidgetStage setting="streaming2b" stage="b" />
 
 
   {/* <WidgetRegForm setting="streaming_user.register" /> */}
