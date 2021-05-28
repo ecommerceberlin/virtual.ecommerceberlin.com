@@ -40,7 +40,7 @@ Recall.disableLayout = true;
 
 export const getServerSideProps = reduxWrapper.getServerSideProps(async (props) => {
 
-    const {query: {token = "", goto = "/stages/a"}} = props;
+    const {query: {token = "", goto = "/"}} = props;
 
     const user = await getUserByToken(settings.system.service_api, token)
 
